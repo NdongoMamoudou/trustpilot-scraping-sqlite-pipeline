@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.swp
+*.swo
+
+# Environnement virtuel
+EnvScraper/
+venv/
+.env
+
+# Données brutes et nettoyées
+data/raw/
+data/clean/
+data/database.sqlite
+
+# Logs
+*.log
+
+# IDE / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
