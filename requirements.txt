@@ -4,3 +4,7 @@ selenium
 lxml
 pandas
 tqdm
+numpy
+pandas
+matplotlib
+seaborn
