@@ -23,7 +23,7 @@ def run_pipeline():
     html_pages = get_all_pages(TRUSTPILOT_URL)
     
     if not html_pages:
-        print("❌ Erreur: Aucune page récupérée")
+        print(" Erreur: Aucune page récupérée")
         return
     
     # Étape 2: Parsing des commentaires
@@ -31,7 +31,7 @@ def run_pipeline():
     comments = parse_comments(html_pages)
     
     if not comments:
-        print("❌ Erreur: Aucun commentaire extrait")
+        print(" Erreur: Aucun commentaire extrait")
         return
     
     # Étape 3: Nettoyage
@@ -48,7 +48,7 @@ def run_pipeline():
             writer.writerows(clean_data)
         print(f"✓ {len(clean_data)} commentaires sauvegardés dans {CSV_OUTPUT_RAW}")
     except Exception as e:
-        print(f"❌ Erreur lors de la sauvegarde: {e}")
+        print(f" Erreur lors de la sauvegarde: {e}")
         return
     
     print("\n" + "=" * 60)
